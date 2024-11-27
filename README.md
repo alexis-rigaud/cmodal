@@ -4,7 +4,7 @@ Porting Modal Estimation [matlab toolbox](https://github.com/orchidas/Modal-esti
 
 ## Call from Octave / Matlab
 
-octave < modal.m
+`octave < modal.m`
 
 ## Reference
 
@@ -14,9 +14,15 @@ octave < modal.m
 
 spdx-license-identifier: MIT
 
+## HOWTO
+
+in `matlab` or `octave` run :
+- `compile` to compile the linalg library and the mex files
+- `tests` to run the units tests
+
 ## TODO
 
-- [ ] tunable matrix parameters (precision and depth)
+- [ ] tunable matrix parameters (precision and max iterations)
 - [ ] frequency_warped_modal.m
 - [ ] hvmodel_freqs_decay.m
 - [ ] knee_pt.m
