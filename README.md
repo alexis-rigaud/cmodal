@@ -27,6 +27,5 @@ in `matlab` or `octave` run :
 - [ ] hvmodel_freqs_decay.m
 - [ ] knee_pt.m
 - [ ] hankel
-- [ ] eig
+- [x] eig/ceig
 - [ ] svd
-- [ ] 
