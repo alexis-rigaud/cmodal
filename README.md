@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)     
+
 # cmodal
 
 Porting Modal Estimation [matlab toolbox](https://github.com/orchidas/Modal-estimation.git ) to C with GPU acceleration
