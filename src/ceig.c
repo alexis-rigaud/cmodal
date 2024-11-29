@@ -15,7 +15,6 @@
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 {
-    mxArray *a_in, *d_out;
     const mwSize *dims;
     double *a, *d;
     int rows, cols;
@@ -40,7 +39,8 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     a = mxGetPr(prhs[0]);
     d = mxGetPr(plhs[0]);
 
-    struct matrix* M = matrix_from_array(a, n, n);
+    // call the library
+    struct matrix* M = matrix_from_matlab(a, n, n);
     struct vector* res = eigen_solve_eigenvalues(M, 0.0001, 100);
 
     // write back into D

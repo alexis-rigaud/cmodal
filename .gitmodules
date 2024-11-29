@@ -1,7 +1,7 @@
 [submodule "linlag"]
     path = lib/linalg
-    url = https://github.com/alexis-rigaud/linalg
+    url = git@github.com:alexis-rigaud/linalg.git
 
 [submodule "modal"]
     path = matlab
-    url = https://github.com/orchidas/Modal-estimation.git
+    url = git@github.com:orchidas/Modal-estimation.git
