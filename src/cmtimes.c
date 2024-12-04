@@ -48,8 +48,11 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     b = mxGetPr(prhs[1]);
     d = mxGetPr(plhs[0]);
 
+    // read the inputs matrix A, B
     struct matrix* m_left   = matrix_from_matlab(a, a_dims[ROW], a_dims[COL]);
     struct matrix* m_right  = matrix_from_matlab(b, b_dims[ROW], b_dims[COL]);
+
+    // C = A*B
     struct matrix* m_output = matrix_multiply(m_left, m_right);
 
     // Write back into D

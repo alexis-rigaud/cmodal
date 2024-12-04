@@ -20,7 +20,7 @@ end
 
 if isunix
     system("cd lib/linalg; rm -fr build; mkdir build; cd build; cmake ..; make");
-    clear ceig; mex -Ilib -Llib/linalg/build -llinalg src/ceig.c;
+    clear ceig;    mex -Ilib -Llib/linalg/build -llinalg src/ceig.c;
     clear cmtimes; mex -Ilib -Llib/linalg/build -llinalg src/cmtimes.c;
 else
     disp('Platform not supported');
