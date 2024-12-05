@@ -24,23 +24,28 @@ disp('ceig() done')
 
 disp("** test matrix mult. **");
 
-%A = rand(2, 3);
-%B = rand(3, 4);
+A = rand(200, 300);
+B = rand(300, 400);
 
-A = [1.0, 2.0 ; 3.0, 4.0 ; 5.0, 6.0]
-B = [1.0, 1.0, 1.0 ; 0.0 , 1.0, 1.0]
+%A = [1.0, 2.0 ; 3.0, 4.0 ; 5.0, 6.0]
+%B = [1.0, 1.0, 1.0 ; 0.0 , 1.0, 1.0]
 
 
 tic
-D = A*B
+D = A*B;
 toc
 size(D)
 disp('mtimes() done')
 
+D(100,200)
+D(200,300)
 tic
-U = cmtimes(A,B)
+U = cmtimes(A,B);
 toc
 size(U)
+U(100,200)
+U(200,300)
+
 disp('cmtimes() done')
 
 
