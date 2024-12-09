@@ -2,7 +2,9 @@
 
 # cmodal
 
-Porting Modal Estimation [matlab toolbox](https://github.com/orchidas/Modal-estimation.git ) to C with GPU acceleration
+Porting Modal Estimation [matlab toolbox](https://github.com/orchidas/Modal-estimation.git ) to C with GPU acceleration.
+
+> This is a work-in-progress.
 
 ## Call from Octave / Matlab
 
