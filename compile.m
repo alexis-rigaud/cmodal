@@ -5,9 +5,10 @@
 isoctave = @exist('OCTAVE_VERSION','builtin')~=0;
 
 if isoctave
+%    pkg install "https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.0/control-4.1.0.tar.gz"
+%    pkg install "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.6.tar.gz"
     pkg load control
     pkg load signal
-    pkg load optim
 end
 
 %% Compile/link C code

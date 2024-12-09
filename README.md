@@ -31,3 +31,9 @@ in `matlab` or `octave` run :
 - [ ] hankel
 - [x] eig/ceig
 - [ ] svd
+
+
+## DEPENDENCIES
+
+`OpenCL` : see [here](https://largo.lip6.fr/monolithe/admin_amd_ocl/)    
+`octave` : `sudo apt  install octave octave-dev`   
